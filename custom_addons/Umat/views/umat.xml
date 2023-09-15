@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="view_umat_dataform" model="ir.ui.view">
+            <field name="name">simu_umat.form</field>
+            <field name="model">simu_umat</field>
+            <field name="arch" type="xml">
+
+            <template id="assets_frontend" name="assets_frontend" inherit_id="website.assets_frontend">
+                <xpath expr=".">
+                    <script type="text/javascript" src="static/src/js/qrcode.js"/>
+                </xpath>
+            </template>
+
+                <form>
+<!--                    Tampilan data dalem form-->
+                    <sheet>
+
+                        <group>
+                            <field name="kode"></field>
+                            <field name="nama"></field>
+                            <field name="nik"></field>
+                            <field name="jenisKelamin"></field>
+                            <field name="tanggalLahir"></field>
+                            <field name="daerahLahir"></field>
+                            <field name="kotaLahir"></field>
+                            <field name="agama"></field>
+                            <field name="keuskupan"></field>
+                            <field name="paroki"></field>
+                            <field name="lingkungan"></field>
+                            <field name="tanggalBaptis"></field>
+                            <field name="tanggalKomuniPertama"></field>
+                            <field name="tanggalPenguatan"></field>
+
+                            <field name="keuskupan"></field>
+                            <field name="paroki"></field>
+                            <field name="lingkungan"></field>
+                            <field name="tanggalBaptis"></field>
+                            <field name="tanggalKomuniPertama"></field>
+                            <field name="tanggalPenguatan2"></field>
+
+                            <field name="golonganDarah"></field>
+                            <field name="ras"></field>
+                            <field name="kewarganegaraan"></field>
+                            <field name="bahasaUtama"></field>
+                            <field name="tipeProtestan"></field>
+                            <field name="agamaSebelumnya"></field>
+
+                            <field name="alamat"></field>
+                            <field name="kabupaten"></field>
+                            <field name="kota"></field>
+                            <field name="kecamatan"></field>
+                            <field name="kelurahan"></field>
+                            <field name="rt"></field>
+                            <field name="rw"></field>
+                            <field name="bulanTinggal"></field>
+                            <field name="tahunTinggal"></field>
+                            <field name="noTelepon"></field>
+                            <field name="noHP"></field>
+                            <field name="email"></field>
+
+                            <field name="hobi"></field>
+                            <field name="anggotaAsuransi"></field>
+                            <field name="statusKesehatan"></field>
+                            <field name="deskripsiKesehatan"></field>
+                            <field name="cacatTubuh"></field>
+                            <field name="deskripsiCacat"></field>
+
+                            <field name="statusPerkawinan"></field>
+                            <field name="statusHubKeluarga"></field>
+                            <field name="namaIbuKandung"></field>
+                            <field name="namaAyahKandung"></field>
+                            <field name="namaAnggotaKeluarga"></field>
+                            <field name="namaAnggotaKeluarga2"></field>
+                            <field name="namaAnggotaKeluarga3"></field>
+                            <field name="namaAnggotaKeluarga4"></field>
+                            <field name="namaAnggotaKeluarga5"></field>
+
+                            <field name="noSuratBaptis"></field>
+                            <field name="namaBaptis"></field>
+                            <field name="jenisBaptis"></field>
+                            <field name="agamaSebelumnya2"></field>
+                            <field name="gerejaBaptis"></field>
+                            <field name="tanggalBaptis2"></field>
+                            <field name="parokiBaptis"></field>
+                            <field name="kotaBaptis"></field>
+
+                            <field name="nomorSuratKomuni"></field>
+                            <field name="tanggalKomuni"></field>
+                            <field name="gerejaKomuni"></field>
+                            <field name="namaParoki"></field>
+                            <field name="kotaParoki"></field>
+
+                            <field name="nomorSuratPenguatan"></field>
+                            <field name="tanggalPenguatan2"></field>
+                            <field name="namaPenguatan"></field>
+                            <field name="gerejaPenguatan"></field>
+                            <field name="namaParokiPenguatan"></field>
+                            <field name="kotaPenguatan"></field>
+
+                            <field name="nomorSuratPerkawinan"></field>
+                            <field name="tanggalPerkawinan"></field>
+                            <field name="gerejaPerkawinan"></field>
+                            <field name="namaParokiPerkawinan"></field>
+                            <field name="kotaPerkawinan"></field>
+                            <field name="namaSuami"></field>
+                            <field name="namaIstri"></field>
+                            <field name="kategoriPerkawinan"></field>
+
+                            <field name="pekerjaan"></field>
+                            <field name="alamatPekerjaan"></field>
+                            <field name="profesi"></field>
+                            <field name="profesiLain"></field>
+                            <field name="pendapatanPerbulan"></field>
+                            <field name="keahlian"></field>
+                            <field name="kursusGerejaPastoral"></field>
+                            <field name="jenisKursus"></field>
+                            <field name="pendidikanSaatIni"></field>
+                            <field name="pendidikanTerakhir"></field>
+                            <field name="jurusan"></field>
+                            <field name="namaSekolah"></field>
+                            <field name="kotaSekolah"></field>
+                            <field name="alamatSekolah"></field>
+                            <field name="kategoriSekolah"></field>
+
+                            <field name="jenisRohaniwan"></field>
+                            <field name="misaHarian"></field>
+                            <field name="misaMingguan"></field>
+                            <field name="misaHariRaya"></field>
+                            <field name="aktifMasyarakat"></field>
+                            <field name="posisiMasyarakat"></field>
+                            <field name="aktifKeuskupan"></field>
+                            <field name="aktifParoki"></field>
+                            <field name="aktifLingkungan"></field>
+                            <field name="aktifWilayah"></field>
+                            <field name="petugasLiturgi"></field>
+                            <field name="aktifKategorial"></field>
+                            <field name="namaKategorial"></field>
+
+                            <field name="anggotaAPK"></field>
+                            <field name="nomorAPK"></field>
+                            <field name="tanggalAPK"></field>
+                            <field name="status"></field>
+                            <field name="tanggalKematian"></field>
+                            <field name="pastorPengurus"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_umat_datatree" model="ir.ui.view">
+            <field name="name">simu_umat.tree</field>
+            <field name="model">simu_umat</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="kode"></field>
+                    <field name="nama"></field>
+                    <field name="lingkungan"></field>
+                    <field name="paroki"></field>
+                    <field name="agama"></field>
+                    <field name="jenisKelamin"></field>
+                </tree>
+           </field>
+        </record>
+
+        <record id="action_simu_umat" model="ir.actions.act_window">
+            <field name="name">Umat</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">simu_umat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_simu_dataumat"
+                name="Data Umat"
+                parent="menu_simu_informasi"
+                action="action_simu_umat"
+                sequence="10">
+        </menuitem>
+</odoo>

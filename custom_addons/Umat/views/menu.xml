@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_simu_root"
+                name="SIMU"
+                sequence="10">
+    </menuitem>
+
+    <menuitem id="menu_simu_informasi"
+                name="Informasi"
+                parent="menu_simu_root"
+                sequence="10">
+    </menuitem>
+
+    <menuitem id="menu_simu_dataumat"
+                name="Data Umat"
+                parent="menu_simu_informasi"
+                sequence="10">
+    </menuitem>
+</odoo>
