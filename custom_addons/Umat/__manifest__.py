@@ -17,6 +17,6 @@
     ],
     'application': True,
     'assets': {
-    'web.assets_frontend': ['Umat/static/src/js/qrcode.js'],
+    'web.assets_backend': ['Umat/static/src/js/qrcode.js'],
     },
 }
