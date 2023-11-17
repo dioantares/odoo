@@ -14,9 +14,11 @@
         'views/menu.xml',
         'security/ir.model.access.csv',
         'views/umat.xml',
+        'views/data.xml',
     ],
-    'application': True,
     'assets': {
-    'web.assets_backend': ['Umat/static/src/js/qrcode.js'],
+        'web.assets_backend': ['Umat/static/src/js/qrcode.js','Umat/static/src/js/qr-scanner.legacy.min.js'],
+        'web.assets_common': ['Umat/static/src/js/qr-scanner.legacy.min.js'],
+        'web.assets_frontend': ['Umat/static/src/js/qr-scanner.legacy.min.js'],
     },
 }

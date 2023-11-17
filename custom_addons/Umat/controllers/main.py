@@ -1,7 +1,9 @@
 from odoo import http
-class Umat(http.Controller):
-    @http.route('/umat/data/', website=True, auth='public')
-    def umat_dataumat(self):
-        return "Test"
+from odoo.http import request
 
-        #return requests.render("")
+class Umat(http.Controller):
+    @http.route('/umat/data/', auth='public', website=True)
+    def umat_dataumat(self):
+        # return "Test"
+        return request.render("Umat.umat_page", {})
+
